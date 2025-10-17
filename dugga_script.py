@@ -10,8 +10,9 @@ This script perfomrs several tasks including:
 4. The script is modular with functions for better organization.
 5. Comments are provided throughout for clarity.
 6. Argparse is used for command-line argument parsing. -> This allows other users to specify input/output files easily.
-    - Note: To run this script, use the command line to specify the input CSV file.
+    - Note: To run this script, use the command line to specify the input CSV file and optionally the output image file.
     - Example: python dugga_script.py -i brca_head500_genes.csv
+    - Example with output file: python dugga_script.py -i brca_head500_genes.csv -o my_output.png
 
 And yes, I like emojis! 😊
 """
@@ -25,7 +26,7 @@ import argparse
 
 def get_args():
     # Setting up and return command-line arguments.
-    parser = argparse.ArgumentParser(description="Dugga: Analyze gene expression data.")
+    parser = argparse.ArgumentParser(description="Dugga: Analyze gene expression data from a CSV file.")
     parser.add_argument(
         "-i", "--input",
         type=str,
