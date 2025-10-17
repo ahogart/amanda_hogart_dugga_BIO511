@@ -89,7 +89,8 @@ if repeat_found is not None: # if we found a repeat
 else:
     print("3. No repeats.")
 
-
+# After writing this code, I got some help understanding it all correctly with assistance from ChatGPT. I understand the logic better now! 😊
+# I just wanted to mention that, because I am not the best at coding or math and I want to be honest about it.
 
 # Part 2 of the dugga script.
 print("\n Part 2:")
